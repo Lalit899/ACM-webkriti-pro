@@ -1,0 +1,162 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  html {
+    font-size: 16px;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+  }
+  
+  /* Navigation styles */
+  nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding: 0 1rem;
+  }
+  
+  .logo a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  
+  .menu li {
+    margin-right: 1rem;
+  }
+  
+  .menu li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .menu li a:hover {
+    color: #f0f0f0;
+  }
+  
+  .cancel-btn {
+    display: none;
+  }
+  
+  .menu-btn {
+    display: none;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .menu {
+      position: fixed;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 80px);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-color: #333;
+      transition: transform 0.2s ease-in-out;
+      transform: translateY(-100%);
+      z-index: 1;
+    }
+  
+    .menu.active {
+      transform: translateY(0%);
+    }
+  
+    .menu li {
+      margin-bottom: 1rem;
+    }
+  
+    .cancel-btn {
+      display: block;
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  
+    .menu-btn {
+      display: block;
+      position: absolute;
+      top: 0.5rem;
+      right: 0.5rem;
+      font-size: 24px;
+      cursor: pointer;
+    }
+  
+    .menu-btn i {
+      transform: rotate(90deg);
+    }
+  
+    .menu-btn.active i {
+      transform: rotate(180deg);
+    }
+  }
+  
+  /* Home section styles */
+  .home {
+    height: calc(100vh - 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+  }
+  
+  .home-content {
+    text-align: center;
+  }
+  
+  .text-one {
+    font-size: 4rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .text-two {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .text-three {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .button button {
+    font-size: 1rem;
+    padding: 
+  
